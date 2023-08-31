@@ -127,8 +127,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Correct configuration
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # You can have more directories here if needed
+]
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Adjust the path as needed
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 
