@@ -130,6 +130,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Adjust the path as needed
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Adjust the path as needed
 
 django_heroku.settings(locals())
